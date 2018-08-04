@@ -1,62 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/styles.css">
-
-    <title>Document</title>
+    <title>rockPaperScissors.js</title>
 </head>
 
 <!--Begin Game User Interface-->
 
     <body class="jumbotron" style="text-align:center;"> 
-
         <div class="container">
-
             <div class="row">
-
                 <div class="col-sm-12 align-center;">
 
-                    <h1>Bryan's Rock, Paper, Scissors Game</h1><br>
-
-                    <p><strong>Instructions:</strong><br>
-                         --  Type "r" for rock -- Type "s" for scissors -- Type "p" for paper -- <em>Have fun --</em></p>
-                
+                    <h1>rockPaperScissors.js</h1>
+                    <p>by Bryan Lee</p><br>
+                    <p><strong>Instructions:</strong></p>
+                    <p>--  Type "r" for rock -- Type "s" for scissors -- Type "p" for paper -- <em>Have fun --</em></p>
                     <hr style="margin-bottom: 45px;">
-
                     <h3 class="reveal" style="color:blueviolet;">Reveal Choices Here...</h3>
-
                     <br><hr><br>
-
-                    <div class="scoreBox">
-
-                        <div class="playerScoreCount">
-
-                            <h4>Player Score</h4>
-
-                            <p class="pScoreNumber" style="font-size:3em; font-weight:bold;"></p>
-
+                        <div class="scoreBox">
+                            <div class="playerScoreCount">
+                                <h4>Player Score</h4>
+                                <p class="pScoreNumber" style="font-size:3em; font-weight:bold;"></p>
                         </div>
 
                         <div class="computerScoreCount">
-
                             <h4 style=>Computer Score</h4>
-
                             <p class="cScoreNumber" style="font-size:3em; font-weight:bold;"></p>
-                            
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
+        
 <!--End Game User Interface-->
 
 <!--Begin Game Functionality - JavaScript-->
@@ -67,7 +49,7 @@
 
             var gameOptions = ["r", "p", "s"];
 
-            // to calculate points
+            //set variables for storing and tallying wins, losses, and ties.
 
             var wins = 0;
             var losses = 0;
@@ -82,10 +64,7 @@
             var userChoice = event.key;
             var compChoice = gameOptions[Math.floor(Math.random() * gameOptions.length)];
 
-
-            //set variables for tallying wins in player area, show losses as wins in computer area
-
-            //set up if statements for how winning and losing operates and is tallied
+            //set up if/else if statements for game win/lose functionality
 
             if ((userChoice === "r") || (userChoice === "p") || (userChoice === "s")) {
 
@@ -105,7 +84,7 @@
                     ties++;
                 }      
 
-            //display choices in designated area
+            //display player and computer choices in designated area
 
                 if ((userChoice === "r") || (userChoice === "p") || (userChoice ==="s")) {
                 document.querySelector (".reveal").innerHTML = "You chose: " + userChoice + "..." +  " The computer chose: " + compChoice;
@@ -122,7 +101,6 @@
         </script>
 
 <!--End Game Functionality - JavaScript-->
-    
-    </body>
 
+    </body>
 </html>
