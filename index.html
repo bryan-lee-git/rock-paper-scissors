@@ -24,15 +24,23 @@
                     <hr style="margin-bottom: 45px;">
                     <h3 class="reveal" style="color:blueviolet;">Reveal Choices Here...</h3>
                     <br><hr><br>
-                        <div class="scoreBox">
-                            <div class="playerScoreCount">
-                                <h4>Player Score</h4>
-                                <p class="pScoreNumber" style="font-size:3em; font-weight:bold;"></p>
-                        </div>
 
-                        <div class="computerScoreCount">
-                            <h4 style=>Computer Score</h4>
-                            <p class="cScoreNumber" style="font-size:3em; font-weight:bold;"></p>
+                    <div class="row scoreBox">
+                        <div class="col-sm-6">
+                            <div class="playerScoreCount">
+
+                                <h4>Player Score</h4>
+
+                                <p class="pScoreNumber" style="font-size:3em; font-weight:bold;"></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="computerScoreCount">
+
+                                <h4 style=>Computer Score</h4>
+
+                                <p class="cScoreNumber" style="font-size:3em; font-weight:bold;"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -54,6 +62,8 @@
             var wins = 0;
             var losses = 0;
             var ties = 0;
+
+            //functions for button options instead of keyboard buttons
 
             //choice is made by typing the letter the respective option starts with.
             
