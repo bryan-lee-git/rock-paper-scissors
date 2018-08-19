@@ -12,17 +12,17 @@
 
 <!--Begin Game User Interface-->
 
-    <body class="jumbotron" style="text-align:center;"> 
+    <body class="jumbotron"> 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 align-center;">
+                <div class="col-sm-12 align-center">
 
-                    <h1>rockPaperScissors.js</h1>
+                    <h1 class="title" style="font-size: 100px;">rockPaperScissors.js</h1>
                     <p>by Bryan Lee</p><br>
-                    <p><strong>Instructions:</strong></p>
-                    <p>--  Type "r" for rock -- Type "s" for scissors -- Type "p" for paper -- <em>Have fun --</em></p>
+                    <p><strong>Instructions:</strong>
+                    Type "r" for rock. Type "s" for scissors. Type "p" for paper. <em>Have fun!</em></p>
                     <hr style="margin-bottom: 45px;">
-                    <h3 class="reveal" style="color:blueviolet;">Reveal Choices Here...</h3>
+                    <h1 class="reveal" style="color:white;">Reveal Choices Here...</h1>
                     <br><hr><br>
 
                     <div class="row scoreBox">
@@ -62,8 +62,6 @@
             var wins = 0;
             var losses = 0;
             var ties = 0;
-
-            //functions for button options instead of keyboard buttons
 
             //choice is made by typing the letter the respective option starts with.
             

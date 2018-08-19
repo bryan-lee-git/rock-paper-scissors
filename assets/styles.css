@@ -1,35 +1,62 @@
 body {
     margin: 0 auto;
+    background-image: url(./rock_paper_scissors.jpeg);
+    background-position: center;
 }
 
 /* Classes */
 
+.title {
+    color: white;
+    font-size: 100px;
+}
+
+.jumbotron {
+    text-align: center;
+    width: 90%;
+    padding: 10px;
+}
+
+.container {
+    width: 90%;
+    color: white;
+    text-shadow: 1px 1px black;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
 .scoreBox {
+    color: white;
     margin: 0 auto;
     width:100%;
     text-align:center;
 }
 
 .playerScoreCount {
+    color: #00d8ff;
     float:left;
     width: 100%;
     display:inline-block;
-    background-color:#888888;
+    background-color:white;
     border-radius:5px;
     padding:10px;
     margin-bottom: 10px;
     margin-right:1px;
     margin-left:1px;
+    text-shadow: none;
 }
 
 .computerScoreCount {
+    color: #00d8ff;
     width: 100%;
     display:inline-block;
-    background-color:#888888;
+    background-color: white;
     border-radius:5px;
     padding:10px;
     margin-left: 1px;
     margin-right: 1px;
+    text-shadow: none;
 }
 
 .btn-light {
@@ -44,6 +71,12 @@ body {
     background-color: #999999
 }
 
+.reveal {
+    background-color: rgba(0, 0, 0, .2);
+    padding: 70px;
+    border-radius: 10px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1332px) {
@@ -53,17 +86,13 @@ body {
     .computerScoreCount {
         width: 100%;
     }
-
+}
     
-    @media screen and (max-width:980px) {
-        .btn-light {
-            max-width: 15%;
-            display:inline-block;
-            float: left;
-            margin:10px;
-        }
-
-        h1 {
-            font-size:30px;
-        }
+@media screen and (max-width:980px) {
+    .btn-light {
+        max-width: 15%;
+        display:inline-block;
+        float: left;
+        margin:10px;
     }
+}
